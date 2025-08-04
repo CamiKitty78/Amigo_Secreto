@@ -1,0 +1,149 @@
+:root {
+  --color-bg: #0f1117;
+  --color-panel: #1a1d29;
+  --color-primary: #00c8ff;
+  --color-primary-dark: #009ec2;
+  --color-text: #e0e0e0;
+  --color-success: #00ff88;
+  --font-main: 'Courier New', Courier, monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.main-content {
+  background: var(--color-panel);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 12px rgba(0, 200, 255, 0.2);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.main-title {
+  font-size: 2rem;
+  color: var(--color-primary);
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 0 0 4px var(--color-primary);
+}
+
+.section-title {
+  font-size: 1rem;
+  color: var(--color-primary);
+  margin-bottom: 16px;
+}
+
+.input-wrapper {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.input-name {
+  flex: 1;
+  padding: 12px 16px;
+  background: #0f1117;
+  color: var(--color-text);
+  border: 1px solid var(--color-primary);
+  border-right: none;
+  border-radius: 10px 0 0 10px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.button-add {
+  background-color: var(--color-primary);
+  color: #0f1117;
+  padding: 12px 16px;
+  border: 1px solid var(--color-primary);
+  border-left: none;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.button-add:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.name-list li {
+  background-color: #151820;
+  border: 1px solid var(--color-primary);
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 6px;
+  font-size: 1rem;
+  color: var(--color-text);
+}
+
+.result-list {
+  color: var(--color-success);
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 20px 0;
+  text-shadow: 0 0 8px var(--color-success);
+}
+
+/* Contenedor que centra el botón */
+.button-draw-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* Estilo del botón */
+.button-draw {
+  background-color: #00cfff;
+  color: #0f1117;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 0 12px rgba(0, 200, 255, 0.6);
+}
+
+.button-draw:hover {
+  background-color: #00b5e0;
+  transform: scale(1.05);
+}
+
+.button-draw img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) saturate(100%) invert(11%) sepia(96%) saturate(3622%) hue-rotate(169deg) brightness(97%) contrast(105%);
+}
+
+
+
+.header-banner img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 200, 255, 0.3);
+}
+
+
