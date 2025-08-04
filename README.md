@@ -22,4 +22,4 @@ Este proyecto es un pequeño challenge web para sortear un **amigo secreto** de 
 
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/CamiKitty78/Amigo_Secretogit
+   git clone https://github.com/CamiKitty78/Amigo_Secreto.git 
